@@ -23,7 +23,6 @@ const StackNavigator: React.FC = () => {
           component={WelcomeScreen}
           // {...headerHidden}
         />
-        <Stack.Screen name="User" component={UserScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

@@ -1,1 +1,3 @@
-export { default as client } from './client'
+// Root file for @Api exports
+
+export {}
