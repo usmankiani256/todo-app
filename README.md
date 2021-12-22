@@ -51,7 +51,7 @@ yarn android
 ### Run on ios
 
 ```bash
-yarn pods && yarn ios
+yarn install:pods && yarn ios
 
 ```
 
