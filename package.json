@@ -1,5 +1,5 @@
 {
-  "name": "@usmankiani256/ts-starter",
+  "name": "@usmankiani256/todo-app",
   "description": "This starter project is a React Native TypeScript boilerplate to kick start the development setup process.",
   "version": "1.0.1",
   "scripts": {
@@ -53,17 +53,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/usmankiani256/ts-starter.git"
+    "url": "https://github.com/usmankiani256/todo-app.git"
   },
   "author": "Muhammad Usman Kiani",
   "license": "MIT",
-  "homepage": "https://github.com/usmankiani256/ts-starter",
+  "homepage": "https://github.com/usmankiani256/todo-app",
   "keywords": [
     "react",
     "react-native",
     "native",
     "typescript",
-    "ts-starter",
+    "todo-app",
     "usmankiani256",
     "boilerplate"
   ],
