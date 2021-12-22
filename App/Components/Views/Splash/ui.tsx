@@ -5,7 +5,7 @@ import { StackScreenProps } from '@Navigation/Stack/types'
 
 import { StatusBar, View } from 'react-native'
 
-const Welcome = (props: StackScreenProps) => {
+const Splash = (props: StackScreenProps) => {
   useService(props)
 
   const { root } = useStyles()
@@ -18,4 +18,4 @@ const Welcome = (props: StackScreenProps) => {
   )
 }
 
-export default Welcome
+export default Splash
