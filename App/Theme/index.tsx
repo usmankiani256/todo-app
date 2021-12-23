@@ -11,8 +11,12 @@ export const Colors = {
   success: '#28a745',
   error: '#dc3545',
 
-  primary: 'teal',
-  secondary: 'green',
+  primary: '#31394F',
+  priority: {
+    high: '#F87171',
+    medium: '#FBBF24',
+    low: '#3460DC',
+  },
 }
 
 /*  APP SPECIFIC FONTS  */
