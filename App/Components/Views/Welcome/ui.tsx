@@ -11,12 +11,17 @@ import { Colors } from '@Theme'
 
 const Welcome = (props: StackScreenProps) => {
   const { onContinue } = useService(props)
-  const { container, image, button } = useStyles()
+
+  const { container, image, heading, caption, button, buttonLabel } =
+    useStyles()
 
   return (
     <>
-      <StatusBar backgroundColor={Colors.primary} />
-      <Screen>
+      <StatusBar
+        barStyle={'dark-content'}
+        backgroundColor={Colors.foreground}
+      />
+      <Screen scrollEnabled={false}>
         <View style={container}>
           <Image
             style={image}
@@ -24,10 +29,13 @@ const Welcome = (props: StackScreenProps) => {
             resizeMode="contain"
             source={require('@Images/logo.png')}
           />
-          <Text h3 center>
-            Welcome to the React Native Template TS
+          <Text w3 h4 center style={heading}>
+            Manage your tasks
           </Text>
-          <Button style={button} onPress={onContinue}>
+          <Text w5 p center style={caption}>
+            Organize and simplify your tasks and stay up to date
+          </Text>
+          <Button style={button} labelStyle={buttonLabel} onPress={onContinue}>
             Continue
           </Button>
         </View>

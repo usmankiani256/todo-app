@@ -1,10 +1,9 @@
-import React from 'react'
 import {} from 'react-native'
 import { StackScreenProps } from '@Navigation/Stack/types'
 
 const useService = (props: StackScreenProps) => {
-  const onContinue = () => {
-    props.navigation.navigate('User')
+  function onContinue() {
+    props.navigation.navigate('SignIn')
   }
 
   return { onContinue }
