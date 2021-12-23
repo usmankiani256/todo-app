@@ -3,19 +3,14 @@ import useService from './service'
 import useStyles from './styles'
 import { StackScreenProps } from '@Navigation/Stack/types'
 
-import { StatusBar, View } from 'react-native'
+import { View } from 'react-native'
 
 const Splash = (props: StackScreenProps) => {
   useService(props)
 
   const { root } = useStyles()
 
-  return (
-    <>
-      <StatusBar hidden />
-      <View style={root} />
-    </>
-  )
+  return <View style={root} />
 }
 
 export default Splash
