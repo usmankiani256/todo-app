@@ -19,6 +19,19 @@ export const Colors = {
   },
 }
 
+/* GLOBAL CARD SHADOW  */
+export const CardShadow = {
+  shadowColor: '#000',
+  shadowOffset: {
+    width: 0,
+    height: 1,
+  },
+  shadowOpacity: 0.18,
+  shadowRadius: 1.0,
+
+  elevation: 1,
+}
+
 /*  APP SPECIFIC FONTS  */
 export const FontFamily = {
   Bold: 'SofiaPro-Bold',
