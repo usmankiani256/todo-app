@@ -74,6 +74,7 @@ const SignIn = (props: StackScreenProps) => {
             />
           </View>
           <Button
+            testID="signin-button-continue"
             onPress={onContinue}
             style={signIn}
             labelStyle={signInLabel}
@@ -81,6 +82,7 @@ const SignIn = (props: StackScreenProps) => {
             Continue
           </Button>
           <Button
+            testID="signin-button-sign-up"
             style={signUp}
             labelStyle={caption}
             mode="text"
