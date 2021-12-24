@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Component renders h2 and w2 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#3f3f3f",
+      "fontFamily": "SofiaPro-SemiBold",
+      "fontSize": 42.5,
+      "lineHeight": 42.5,
+    }
+  }
+>
+  Hello world!
+</Text>
+`;
+
+exports[`Text Component renders h3 and w3 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#3f3f3f",
+      "fontFamily": "SofiaPro-Medium",
+      "fontSize": 30,
+      "lineHeight": 30,
+    }
+  }
+>
+  Hello world!
+</Text>
+`;
+
+exports[`Text Component renders h4 and w4 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#3f3f3f",
+      "fontFamily": "SofiaPro",
+      "fontSize": 25,
+      "lineHeight": 25,
+    }
+  }
+>
+  Hello world!
+</Text>
+`;
+
+exports[`Text Component renders h5 and w5 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#3f3f3f",
+      "fontFamily": "SofiaPro-Light",
+      "fontSize": 20,
+      "lineHeight": 20,
+    }
+  }
+>
+  Hello world!
+</Text>
+`;
+
+exports[`Text Component renders p 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#3f3f3f",
+      "fontFamily": "SofiaPro",
+      "fontSize": 17.5,
+      "lineHeight": 17.5,
+    }
+  }
+>
+  Hello world!
+</Text>
+`;
+
+exports[`Text Component renders props 1`] = `
+<Text
+  numberOfLines={4}
+  style={
+    Object {
+      "alignSelf": "center",
+      "color": "#3f3f3f",
+      "fontFamily": "SofiaPro",
+      "fontSize": 60,
+      "fontStyle": "italic",
+      "fontWeight": "bold",
+      "lineHeight": 60,
+      "padding": 10,
+      "textAlign": "justify",
+    }
+  }
+>
+  Hello world!
+</Text>
+`;
+
+exports[`Text Component renders text correctly 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#3f3f3f",
+      "fontFamily": "SofiaPro",
+      "fontSize": 20,
+      "lineHeight": 20,
+    }
+  }
+>
+  Hello world!
+</Text>
+`;
