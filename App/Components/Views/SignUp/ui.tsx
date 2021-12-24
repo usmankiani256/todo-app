@@ -93,6 +93,7 @@ const SignUp = (props: StackScreenProps) => {
             />
           </View>
           <Button
+            testID="sign-up-button-create"
             onPress={onCreateAccount}
             style={signUp}
             labelStyle={signUpLabel}
@@ -100,6 +101,7 @@ const SignUp = (props: StackScreenProps) => {
             Create an account
           </Button>
           <Button
+            testID="sign-up-button-signin"
             style={signIn}
             labelStyle={caption}
             mode="text"
