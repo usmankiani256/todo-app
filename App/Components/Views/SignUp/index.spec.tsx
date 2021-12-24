@@ -22,6 +22,6 @@ describe('SignUpScreen Component', () => {
 
     fireEvent.press(getByTestId('sign-up-button-signin'))
 
-    expect(props.navigation.navigate).toBeCalledTimes(1)
+    expect(props.navigation.navigate).toBeCalledWith('SignIn')
   })
 })

@@ -921,6 +921,7 @@ exports[`SignUpScreen Component renders correctly 1`] = `
                   },
                 ]
               }
+              testID="sign-up-button-create"
             >
               <View
                 style={
