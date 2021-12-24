@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Screen Component renders correctly 1`] = `
+<RCTScrollView
+  contentInsetAdjustmentBehavior="automatic"
+  keyboardShouldPersistTaps="handled"
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flexGrow": 1,
+    }
+  }
+>
+  <View>
+    <RCTSafeAreaView
+      emulateUnlessSupported={true}
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#3f3f3f",
+              "fontFamily": "SofiaPro",
+              "fontSize": 20,
+              "lineHeight": 20,
+            }
+          }
+        >
+          Hello, world!
+        </Text>
+      </View>
+    </RCTSafeAreaView>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Screen Component renders props 1`] = `
+<RCTScrollView
+  contentInsetAdjustmentBehavior="automatic"
+  keyboardShouldPersistTaps="handled"
+  scrollEnabled={false}
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flexGrow": 1,
+    }
+  }
+>
+  <View>
+    <RCTSafeAreaView
+      emulateUnlessSupported={true}
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#3f3f3f",
+              "fontFamily": "SofiaPro",
+              "fontSize": 20,
+              "lineHeight": 20,
+            }
+          }
+        >
+          Hello, world!
+        </Text>
+      </View>
+    </RCTSafeAreaView>
+  </View>
+</RCTScrollView>
+`;
