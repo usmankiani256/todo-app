@@ -23,6 +23,7 @@ const Input = (props: PaperInputProps) => {
     <>
       <TextInput
         {...rest}
+        testID="input-id"
         dense={true}
         style={[viewStyle, style]}
         outlineColor={Colors.foreground}

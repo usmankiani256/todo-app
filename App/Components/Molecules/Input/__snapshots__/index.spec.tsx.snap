@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "rgb(231, 231, 231)",
+        "borderTopLeftRadius": 4,
+        "borderTopRightRadius": 4,
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "elevation": 1,
+        "marginTop": 15,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 1,
+          "width": 0,
+        },
+        "shadowOpacity": 0.18,
+        "shadowRadius": 1,
+        "width": 714,
+      },
+    ]
+  }
+>
+  <View
+    collapsable={false}
+    nativeID="animatedComponent"
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "bottom": 0,
+        "height": 2,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "transform": Array [
+          Object {
+            "scaleY": 0.5,
+          },
+        ],
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "paddingBottom": 0,
+          "paddingTop": 0,
+        },
+        Object {
+          "minHeight": 40,
+        },
+      ]
+    }
+  >
+    <TextInput
+      editable={true}
+      multiline={false}
+      onBlur={[Function]}
+      onChangeText={[Function]}
+      onFocus={[Function]}
+      outlineColor="#FFFFFF"
+      placeholderTextColor="rgba(0, 0, 0, 0.54)"
+      selectionColor="#6200ee"
+      style={
+        Array [
+          Object {
+            "flexGrow": 1,
+            "margin": 0,
+            "zIndex": 1,
+          },
+          Object {
+            "paddingLeft": 12,
+            "paddingRight": 12,
+          },
+          Object {
+            "height": 40,
+          },
+          Object {
+            "paddingBottom": 0,
+            "paddingTop": 0,
+          },
+          Object {
+            "color": "#000000",
+            "fontFamily": "System",
+            "fontSize": 16,
+            "fontWeight": undefined,
+            "textAlign": "left",
+            "textAlignVertical": "center",
+          },
+          false,
+          Array [
+            Object {},
+          ],
+        ]
+      }
+      testID="input-id"
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
+
+exports[`Button Component renders props 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "rgb(231, 231, 231)",
+          "borderTopLeftRadius": 4,
+          "borderTopRightRadius": 4,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "elevation": 1,
+          "marginTop": 15,
+          "shadowColor": "#000",
+          "shadowOffset": Object {
+            "height": 1,
+            "width": 0,
+          },
+          "shadowOpacity": 0.18,
+          "shadowRadius": 1,
+          "width": 714,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      nativeID="animatedComponent"
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "bottom": 0,
+          "height": 2,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "transform": Array [
+            Object {
+              "scaleY": 0.5,
+            },
+          ],
+        }
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 0,
+            "paddingTop": 0,
+          },
+          Object {
+            "minHeight": 52,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        nativeID="animatedComponent"
+        pointerEvents="none"
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "opacity": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "transform": Array [
+              Object {
+                "translateX": 3,
+              },
+            ],
+          }
+        }
+      >
+        <Text
+          collapsable={false}
+          nativeID="animatedComponent"
+          numberOfLines={1}
+          onLayout={[Function]}
+          style={
+            Object {
+              "color": "#6200ee",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": undefined,
+              "left": 0,
+              "opacity": 0,
+              "paddingLeft": 12,
+              "paddingRight": 12,
+              "position": "absolute",
+              "textAlign": "left",
+              "top": 28,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+                Object {
+                  "translateY": -10,
+                },
+                Object {
+                  "scale": 0.75,
+                },
+              ],
+              "writingDirection": "ltr",
+            }
+          }
+        >
+          Email Address
+        </Text>
+        <Text
+          collapsable={false}
+          nativeID="animatedComponent"
+          numberOfLines={1}
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.54)",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": undefined,
+              "left": 0,
+              "opacity": 0,
+              "paddingLeft": 12,
+              "paddingRight": 12,
+              "position": "absolute",
+              "textAlign": "left",
+              "top": 28,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+                Object {
+                  "translateY": -10,
+                },
+                Object {
+                  "scale": 0.75,
+                },
+              ],
+              "writingDirection": "ltr",
+            }
+          }
+        >
+          Email Address
+        </Text>
+      </View>
+      <TextInput
+        editable={true}
+        keyboardType="email-address"
+        multiline={false}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        outlineColor="#FFFFFF"
+        placeholder=""
+        placeholderTextColor="rgba(0, 0, 0, 0.54)"
+        selectionColor="#6200ee"
+        style={
+          Array [
+            Object {
+              "flexGrow": 1,
+              "margin": 0,
+              "zIndex": 1,
+            },
+            Object {
+              "paddingLeft": 12,
+              "paddingRight": 12,
+            },
+            Object {
+              "height": 52,
+            },
+            Object {
+              "paddingBottom": 2,
+              "paddingTop": 22,
+            },
+            Object {
+              "color": "#000000",
+              "fontFamily": "System",
+              "fontSize": 16,
+              "fontWeight": undefined,
+              "textAlign": "left",
+              "textAlignVertical": "center",
+            },
+            false,
+            Array [
+              Object {},
+            ],
+          ]
+        }
+        testID="input-id"
+        underlineColorAndroid="transparent"
+        value="sample@email.com"
+      />
+    </View>
+  </View>,
+  <Text
+    collapsable={false}
+    nativeID="animatedComponent"
+    onLayout={[Function]}
+    style={
+      Object {
+        "color": "#B00020",
+        "fontFamily": "System",
+        "fontSize": 12,
+        "fontWeight": "400",
+        "opacity": 1,
+        "paddingHorizontal": 12,
+        "paddingVertical": 4,
+        "textAlign": "left",
+        "transform": Array [
+          Object {
+            "translateY": -0,
+          },
+        ],
+        "writingDirection": "ltr",
+      }
+    }
+  >
+        
+    * 
+    this is an error message
+  </Text>,
+]
+`;
