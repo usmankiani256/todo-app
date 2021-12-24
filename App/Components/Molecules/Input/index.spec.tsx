@@ -2,7 +2,7 @@ import * as React from 'react'
 import { render, fireEvent } from '@testing-library/react-native'
 import Input from './index'
 
-describe('Button Component', () => {
+describe('Input Component', () => {
   it('renders correctly', () => {
     const rendered: any = render(<Input />).toJSON()
 
