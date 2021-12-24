@@ -1,51 +1,38 @@
 import * as React from 'react'
-import { render } from '@testing-library/react-native'
+import { render, fireEvent } from '@testing-library/react-native'
 import Button from './index'
 
-const text = 'Click me!'
-let defaultStyle = {
-  backgroundColor: '#6200ee',
-  shadowColor: '#000000',
-  shadowOffset: { width: 0, height: 0.75 },
-  shadowOpacity: 0.24,
-  shadowRadius: 1.5,
-  minWidth: 64,
-  borderStyle: 'solid',
-  elevation: 2,
-  borderColor: 'transparent',
-  borderWidth: 0,
-  borderRadius: 4,
-}
+const children = 'Click me!'
 
-describe('Text: renders hello world', () => {
-  const rendered: any = render(<Button>{text}</Button>).toJSON()
+describe('Button Component', () => {
+  it('renders correctly', () => {
+    const rendered: any = render(<Button>{children}</Button>).toJSON()
 
-  test('renders type text', () => {
-    expect(rendered.type).toBe('View')
+    expect(rendered).toMatchSnapshot()
   })
 
-  test('has text', () => {
-    expect(rendered.children[0].children[0].children[0].children[0]).toBe(text)
+  it('renders props', () => {
+    const props = {
+      icon: 'camera',
+      disabled: true,
+    }
+
+    const rendered: any = render(
+      <Button {...props}>{children}</Button>,
+    ).toJSON()
+
+    expect(rendered).toMatchSnapshot()
   })
 
-  test('has default styles', () => {
-    expect(rendered.props.style).toStrictEqual(defaultStyle)
-  })
-})
+  it('is called once on click', () => {
+    const mockFn = jest.fn()
 
-describe('Text: receives built in props', () => {
-  let props = {
-    icon: 'camera',
-  }
+    const { getByText }: any = render(
+      <Button onPress={mockFn}>{children}</Button>,
+    )
 
-  const { UNSAFE_getByProps }: any = render(<Button {...props}>{text}</Button>)
+    fireEvent.press(getByText(children))
 
-  console.log(
-    '🚀 ~ file: index.spec.tsx ~ line 41 ~ describe ~ rendered',
-    UNSAFE_getByProps(props),
-  )
-
-  test('receives props', () => {
-    expect(UNSAFE_getByProps(props).toBeDefined())
+    expect(mockFn).toBeCalledTimes(1)
   })
 })
