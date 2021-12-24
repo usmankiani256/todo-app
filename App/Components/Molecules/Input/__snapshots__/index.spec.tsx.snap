@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Component renders correctly 1`] = `
+exports[`Input Component renders correctly 1`] = `
 <View
   style={
     Array [
@@ -105,7 +105,7 @@ exports[`Button Component renders correctly 1`] = `
 </View>
 `;
 
-exports[`Button Component renders props 1`] = `
+exports[`Input Component renders props 1`] = `
 Array [
   <View
     style={
