@@ -1,5 +1,5 @@
 const Item = {
-  Key: 'value',
+  Users: 'users',
 }
 
 export default Item

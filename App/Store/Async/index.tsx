@@ -6,7 +6,7 @@ export type AsyncItem = string
 class AsyncStorage {
   Item = Item
 
-  async setItem(item: AsyncItem, data: JSON | boolean) {
+  async setItem(item: AsyncItem, data: any) {
     let parsedData = JSON.stringify(data)
     await RNAsyncStorage.setItem(item, parsedData)
     console.debug(`Async:\nItem "${item}" set to ${data}`)
