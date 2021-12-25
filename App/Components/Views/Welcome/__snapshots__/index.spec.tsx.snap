@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WelcomeScreen Component renders correctly 1`] = `
+<RCTScrollView
+  contentInsetAdjustmentBehavior="automatic"
+  keyboardShouldPersistTaps="handled"
+  scrollEnabled={false}
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "flexGrow": 1,
+    }
+  }
+>
+  <View>
+    <RCTSafeAreaView
+      emulateUnlessSupported={true}
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "height": 1334,
+              "width": 750,
+            }
+          }
+        >
+          <Image
+            resizeMethod="resize"
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../App/Assets/Images/logo.png",
+              }
+            }
+            style={
+              Object {
+                "alignSelf": "center",
+                "marginBottom": 20,
+                "marginTop": 200.1,
+                "width": 250,
+              }
+            }
+          />
+          <Text
+            style={
+              Object {
+                "color": "#31394F",
+                "fontFamily": "SofiaPro-Medium",
+                "fontSize": 25,
+                "lineHeight": 25,
+                "textAlign": "center",
+              }
+            }
+          >
+            Manage your tasks
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#777b",
+                "fontFamily": "SofiaPro-Light",
+                "fontSize": 17.5,
+                "lineHeight": 17.5,
+                "marginTop": 30,
+                "paddingHorizontal": 75,
+                "textAlign": "center",
+              }
+            }
+          >
+            Organize and simplify your tasks and stay up to date
+          </Text>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#6200ee",
+                "borderColor": "transparent",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 0,
+                "elevation": 2,
+                "marginTop": 70,
+                "minWidth": 64,
+                "shadowColor": "#000000",
+                "shadowOffset": Object {
+                  "height": 0.75,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.24,
+                "shadowRadius": 1.5,
+              }
+            }
+          >
+            <View
+              accessibilityRole="button"
+              accessibilityState={
+                Object {
+                  "disabled": false,
+                }
+              }
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  Object {
+                    "overflow": "hidden",
+                  },
+                  Object {
+                    "borderRadius": 4,
+                  },
+                ]
+              }
+              testID="welcome-button-continue"
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                    },
+                    Object {
+                      "width": 714,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  numberOfLines={1}
+                  selectable={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#000000",
+                        "fontFamily": "System",
+                        "fontWeight": "400",
+                      },
+                      Object {
+                        "textAlign": "left",
+                      },
+                      Array [
+                        Object {
+                          "letterSpacing": 1,
+                          "marginHorizontal": 16,
+                          "marginVertical": 9,
+                          "textAlign": "center",
+                        },
+                        undefined,
+                        Object {
+                          "textTransform": "uppercase",
+                        },
+                        Object {
+                          "color": "#ffffff",
+                          "fontFamily": "System",
+                          "fontWeight": "500",
+                        },
+                        Object {
+                          "fontFamily": "System",
+                          "fontWeight": "500",
+                        },
+                        Object {
+                          "paddingTop": 2,
+                        },
+                      ],
+                    ]
+                  }
+                >
+                  Continue
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTSafeAreaView>
+  </View>
+</RCTScrollView>
+`;

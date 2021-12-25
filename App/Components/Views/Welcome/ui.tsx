@@ -35,7 +35,11 @@ const Welcome = (props: StackScreenProps) => {
           <Text w5 p center style={caption}>
             Organize and simplify your tasks and stay up to date
           </Text>
-          <Button style={button} labelStyle={buttonLabel} onPress={onContinue}>
+          <Button
+            testID="welcome-button-continue"
+            style={button}
+            labelStyle={buttonLabel}
+            onPress={onContinue}>
             Continue
           </Button>
         </View>
