@@ -24,4 +24,18 @@ describe('SignInScreen Component', () => {
 
     expect(props.navigation.navigate).toBeCalledWith('SignUp')
   })
+
+  it('navigates to Home screen', () => {
+    const props: any = {
+      navigation: {
+        navigate: jest.fn(),
+      },
+    }
+
+    const { getByTestId } = render(<SignInScreen {...props} />)
+
+    fireEvent.press(getByTestId('signin-button-continue'))
+
+    expect(props.navigation.navigate).toBeCalledWith('Home')
+  })
 })
