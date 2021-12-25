@@ -11,7 +11,9 @@ const useService = (props: StackScreenProps) => {
     setSecureEntry(!secureEntry)
   }
 
-  function onContinue() {}
+  function onContinue() {
+    props.navigation.navigate('Home')
+  }
 
   function onSignUp() {
     props.navigation.navigate('SignUp')
