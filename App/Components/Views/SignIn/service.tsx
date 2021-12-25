@@ -2,6 +2,7 @@ import * as React from 'react'
 import {} from 'react-native'
 import { StackScreenProps } from '@Navigation/Stack/types'
 import { loginUser } from '@Api'
+import { setCurrentUser } from 'Api'
 
 const useService = (props: StackScreenProps) => {
   const newEmail: any = props.route.params?.email || false
@@ -28,7 +29,9 @@ const useService = (props: StackScreenProps) => {
         if (verified) {
           console.debug('Navigate to Home')
           setError(false)
-          props.navigation.navigate('Home')
+          setCurrentUser({ email, password }).then(() => {
+            props.navigation.navigate('Home')
+          })
         } else {
           // Failed to login
           console.debug('Failed')
