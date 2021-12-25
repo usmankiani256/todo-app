@@ -4,10 +4,19 @@ import { StackScreenProps } from '@Navigation/Stack/types'
 import { loginUser } from '@Api'
 
 const useService = (props: StackScreenProps) => {
+  const newEmail: any = props.route.params?.email || false
+
   const [email, setEmail] = React.useState('guest@example.com')
   const [password, setPassword] = React.useState('guest')
   const [secureEntry, setSecureEntry] = React.useState(true)
   const [error, setError] = React.useState(false)
+
+  React.useEffect(() => {
+    if (newEmail) {
+      setEmail(newEmail)
+      setPassword('')
+    }
+  }, [newEmail])
 
   function toggleSecureEntry() {
     setSecureEntry(!secureEntry)
