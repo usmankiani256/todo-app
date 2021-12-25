@@ -11,6 +11,7 @@ import { Colors } from '@Theme'
 
 const SignIn = (props: StackScreenProps) => {
   const {
+    error,
     email,
     setEmail,
     password,
@@ -60,7 +61,6 @@ const SignIn = (props: StackScreenProps) => {
               value={email}
               onChangeText={setEmail}
               placeholder="Johndoe@gmail.com"
-              // errorMessage={error && error.type === 'username' && error.message}
             />
             <Input
               label="Password"
@@ -70,7 +70,7 @@ const SignIn = (props: StackScreenProps) => {
               placeholder="*********"
               rightIcon={secureEntry ? 'eye-off' : 'eye'}
               onRightPress={toggleSecureEntry}
-              // errorMessage={error && error.type === 'username' && error.message}
+              errorMessage={error && 'Invalid username or password'}
             />
           </View>
           <Button
