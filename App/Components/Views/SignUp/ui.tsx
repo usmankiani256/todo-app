@@ -12,6 +12,7 @@ import { IconButton } from 'react-native-paper'
 
 const SignUp = (props: StackScreenProps) => {
   const {
+    error,
     username,
     setUsername,
     email,
@@ -71,7 +72,6 @@ const SignUp = (props: StackScreenProps) => {
               value={username}
               onChangeText={setUsername}
               placeholder="John Doe"
-              // errorMessage={error && error.type === 'username' && error.message}
             />
             <Input
               label="Email Address"
@@ -79,7 +79,6 @@ const SignUp = (props: StackScreenProps) => {
               value={email}
               onChangeText={setEmail}
               placeholder="Johndoe@gmail.com"
-              // errorMessage={error && error.type === 'username' && error.message}
             />
             <Input
               label="Password"
@@ -89,7 +88,7 @@ const SignUp = (props: StackScreenProps) => {
               placeholder="*********"
               rightIcon={secureEntry ? 'eye-off' : 'eye'}
               onRightPress={toggleSecureEntry}
-              // errorMessage={error && error.type === 'username' && error.message}
+              errorMessage={error && 'All fields are required'}
             />
           </View>
           <Button
