@@ -11,10 +11,11 @@ export type TaskItemProps = {
   status: 'checked' | 'unchecked'
   description: string
   onToggle: () => void
+  onPress: () => void
 }
 
 const TaskItem = (props: TaskItemProps) => {
-  const { priority, status, description, onToggle } = props
+  const { priority, status, description, onToggle, onPress } = props
 
   let indicatorColor =
     priority === 'high'
@@ -30,7 +31,7 @@ const TaskItem = (props: TaskItemProps) => {
   return (
     <TouchableRipple
       testID="task-item-button"
-      onPress={onToggle}
+      onPress={onPress}
       style={container}>
       <>
         <View
@@ -41,6 +42,8 @@ const TaskItem = (props: TaskItemProps) => {
           }}
         />
         <Icon
+          testID="task-item-icon"
+          onPress={onToggle}
           name={taskStatus ? 'checkbox-marked' : 'checkbox-blank-outline'}
           color={taskStatus ? Colors.primary : Colors.tintGrey}
           size={25}
