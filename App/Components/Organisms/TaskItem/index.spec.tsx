@@ -9,6 +9,7 @@ describe('TaskItem Component', () => {
         priority="high"
         status="checked"
         onToggle={() => {}}
+        onPress={() => {}}
         description="Create header page component"
       />,
     ).toJSON()
@@ -22,6 +23,7 @@ describe('TaskItem Component', () => {
         priority="medium"
         status="unchecked"
         onToggle={() => {}}
+        onPress={() => {}}
         description="Create header page component"
       />,
     ).toJSON()
@@ -35,6 +37,7 @@ describe('TaskItem Component', () => {
         priority="low"
         status="unchecked"
         onToggle={() => {}}
+        onPress={() => {}}
         description="Create header page component"
       />,
     ).toJSON()
@@ -42,7 +45,25 @@ describe('TaskItem Component', () => {
     expect(rendered).toMatchSnapshot()
   })
 
-  it('is called once on click', () => {
+  it('onPress fires', () => {
+    const mockFn = jest.fn()
+
+    const { getByTestId } = render(
+      <TaskItem
+        priority="low"
+        status="unchecked"
+        onToggle={() => {}}
+        onPress={mockFn}
+        description="Create header page component"
+      />,
+    )
+
+    fireEvent.press(getByTestId('task-item-button'))
+
+    expect(mockFn).toBeCalledTimes(1)
+  })
+
+  it('onToggle fires', () => {
     const mockFn = jest.fn()
 
     const { getByTestId } = render(
@@ -50,11 +71,12 @@ describe('TaskItem Component', () => {
         priority="low"
         status="unchecked"
         onToggle={mockFn}
+        onPress={() => {}}
         description="Create header page component"
       />,
     )
 
-    fireEvent.press(getByTestId('task-item-button'))
+    fireEvent.press(getByTestId('task-item-icon'))
 
     expect(mockFn).toBeCalledTimes(1)
   })

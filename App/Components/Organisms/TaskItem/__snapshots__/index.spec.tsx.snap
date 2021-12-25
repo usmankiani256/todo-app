@@ -51,6 +51,7 @@ exports[`TaskItem Component renders high priority, checked and description 1`] =
   />
   <Text
     allowFontScaling={false}
+    onPress={[Function]}
     style={
       Array [
         Object {
@@ -68,6 +69,7 @@ exports[`TaskItem Component renders high priority, checked and description 1`] =
         Object {},
       ]
     }
+    testID="task-item-icon"
   >
     󰄲
   </Text>
@@ -144,6 +146,7 @@ exports[`TaskItem Component renders low priority 1`] = `
   />
   <Text
     allowFontScaling={false}
+    onPress={[Function]}
     style={
       Array [
         Object {
@@ -161,6 +164,7 @@ exports[`TaskItem Component renders low priority 1`] = `
         Object {},
       ]
     }
+    testID="task-item-icon"
   >
     󰄱
   </Text>
@@ -237,6 +241,7 @@ exports[`TaskItem Component renders medium priority, unchecked 1`] = `
   />
   <Text
     allowFontScaling={false}
+    onPress={[Function]}
     style={
       Array [
         Object {
@@ -254,6 +259,7 @@ exports[`TaskItem Component renders medium priority, unchecked 1`] = `
         Object {},
       ]
     }
+    testID="task-item-icon"
   >
     󰄱
   </Text>
