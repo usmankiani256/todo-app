@@ -3,7 +3,13 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import useStyles from './styles'
 import { RootStackParamList } from './types'
-import { SplashScreen, WelcomeScreen, SignInScreen, SignUpScreen } from '@Views'
+import {
+  SplashScreen,
+  WelcomeScreen,
+  SignInScreen,
+  SignUpScreen,
+  HomeScreen,
+} from '@Views'
 import { Appbar } from '@Organisms'
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
@@ -38,6 +44,7 @@ const StackNavigator: React.FC = () => {
           component={SignUpScreen}
           {...headerHidden}
         />
+        <Stack.Screen name="Home" component={HomeScreen} {...headerHidden} />
       </Stack.Navigator>
     </NavigationContainer>
   )

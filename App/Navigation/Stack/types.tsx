@@ -5,6 +5,7 @@ export type RootStackParamList = {
   Welcome: undefined
   SignIn: undefined
   SignUp: undefined
+  Home: undefined
 }
 
 export type StackScreenProps = NativeStackScreenProps<RootStackParamList>
