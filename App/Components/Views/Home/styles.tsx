@@ -11,11 +11,11 @@ const useStyles = () =>
     },
     heading: {
       color: Colors.primary,
-      margin: 25,
+      margin: 18,
       marginBottom: 10,
     },
     caption: {
-      marginLeft: 25,
+      marginLeft: 18,
       color: Colors.tintGrey,
     },
   })
