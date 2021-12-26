@@ -8,17 +8,12 @@ export interface User {
 }
 
 async function getCurrentUser(): Promise<User | null> {
-  try {
-    return await Async.getItem(Async.Item.CurrentUser)
-  } catch (e) {
-    return null
-  }
+  return await Async.getItem(Async.Item.CurrentUser)
 }
 
 async function setCurrentUser(user: User | any) {
-  try {
-    await Async.setItem(Async.Item.CurrentUser, user)
-  } catch (e) {}
+  await Async.setItem(Async.Item.CurrentUser, user)
+  return user
 }
 
 export { getCurrentUser, setCurrentUser }
