@@ -56,7 +56,9 @@ Array [
                 }
               }
             >
-              You have X tasks
+              You have 
+              X
+               tasks
             </Text>
             <View
               style={
@@ -84,8 +86,6 @@ Array [
               }
             >
               <View
-                collapsable={false}
-                nativeID="animatedComponent"
                 style={
                   Object {
                     "backgroundColor": "#FFFFFF",
@@ -160,6 +160,7 @@ Array [
                   }
                   testID="search-id"
                   underlineColorAndroid="transparent"
+                  value=""
                 />
               </View>
               <View
@@ -283,290 +284,12 @@ Array [
             >
               Tasks:
             </Text>
-            <View
-              accessibilityState={
-                Object {
-                  "disabled": false,
-                }
-              }
-              accessible={true}
-              focusable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Array [
-                  false,
-                  Object {
-                    "alignItems": "center",
-                    "alignSelf": "center",
-                    "borderColor": "#777b",
-                    "borderLeftWidth": 0,
-                    "borderRadius": 10,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginBottom": 15,
-                    "minHeight": 50,
-                    "width": 714,
-                  },
-                ]
-              }
-              testID="task-item-button"
-            >
-              <View
-                style={
-                  Object {
-                    "backgroundColor": "#F87171",
-                    "borderBottomLeftRadius": 10,
-                    "borderColor": "#F87171",
-                    "borderTopLeftRadius": 10,
-                    "borderWidth": 1,
-                    "height": "100%",
-                    "marginRight": 10,
-                    "width": 8,
-                  }
-                }
-              />
-              <Text
-                allowFontScaling={false}
-                onPress={[Function]}
-                style={
-                  Array [
-                    Object {
-                      "color": "#31394F",
-                      "fontSize": 25,
-                    },
-                    Object {
-                      "opacity": 0.7,
-                    },
-                    Object {
-                      "fontFamily": "Material Design Icons",
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                    },
-                    Object {},
-                  ]
-                }
-                testID="task-item-icon"
-              >
-                󰄲
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#3f3f3f",
-                    "fontFamily": "SofiaPro",
-                    "fontSize": 20,
-                    "lineHeight": 20,
-                    "marginLeft": 10,
-                    "marginRight": 50,
-                    "marginVertical": 8,
-                    "opacity": 0.7,
-                    "paddingTop": 2,
-                    "textAlign": "justify",
-                    "textDecorationLine": "line-through",
-                  }
-                }
-              >
-                Create header page component
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                Object {
-                  "disabled": false,
-                }
-              }
-              accessible={true}
-              focusable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Array [
-                  false,
-                  Object {
-                    "alignItems": "center",
-                    "alignSelf": "center",
-                    "borderColor": "#777b",
-                    "borderLeftWidth": 0,
-                    "borderRadius": 10,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginBottom": 15,
-                    "minHeight": 50,
-                    "width": 714,
-                  },
-                ]
-              }
-              testID="task-item-button"
-            >
-              <View
-                style={
-                  Object {
-                    "backgroundColor": "#FBBF24",
-                    "borderBottomLeftRadius": 10,
-                    "borderColor": "#FBBF24",
-                    "borderTopLeftRadius": 10,
-                    "borderWidth": 1,
-                    "height": "100%",
-                    "marginRight": 10,
-                    "width": 8,
-                  }
-                }
-              />
-              <Text
-                allowFontScaling={false}
-                onPress={[Function]}
-                style={
-                  Array [
-                    Object {
-                      "color": "#777b",
-                      "fontSize": 25,
-                    },
-                    Object {
-                      "opacity": 1,
-                    },
-                    Object {
-                      "fontFamily": "Material Design Icons",
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                    },
-                    Object {},
-                  ]
-                }
-                testID="task-item-icon"
-              >
-                󰄱
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#3f3f3f",
-                    "fontFamily": "SofiaPro",
-                    "fontSize": 20,
-                    "lineHeight": 20,
-                    "marginLeft": 10,
-                    "marginRight": 50,
-                    "marginVertical": 8,
-                    "opacity": 1,
-                    "paddingTop": 2,
-                    "textAlign": "justify",
-                    "textDecorationLine": undefined,
-                  }
-                }
-              >
-                Meeting with developers
-              </Text>
-            </View>
-            <View
-              accessibilityState={
-                Object {
-                  "disabled": false,
-                }
-              }
-              accessible={true}
-              focusable={true}
-              onClick={[Function]}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Array [
-                  false,
-                  Object {
-                    "alignItems": "center",
-                    "alignSelf": "center",
-                    "borderColor": "#777b",
-                    "borderLeftWidth": 0,
-                    "borderRadius": 10,
-                    "borderWidth": 1,
-                    "flexDirection": "row",
-                    "marginBottom": 15,
-                    "minHeight": 50,
-                    "width": 714,
-                  },
-                ]
-              }
-              testID="task-item-button"
-            >
-              <View
-                style={
-                  Object {
-                    "backgroundColor": "#3460DC",
-                    "borderBottomLeftRadius": 10,
-                    "borderColor": "#3460DC",
-                    "borderTopLeftRadius": 10,
-                    "borderWidth": 1,
-                    "height": "100%",
-                    "marginRight": 10,
-                    "width": 8,
-                  }
-                }
-              />
-              <Text
-                allowFontScaling={false}
-                onPress={[Function]}
-                style={
-                  Array [
-                    Object {
-                      "color": "#777b",
-                      "fontSize": 25,
-                    },
-                    Object {
-                      "opacity": 1,
-                    },
-                    Object {
-                      "fontFamily": "Material Design Icons",
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                    },
-                    Object {},
-                  ]
-                }
-                testID="task-item-icon"
-              >
-                󰄱
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#3f3f3f",
-                    "fontFamily": "SofiaPro",
-                    "fontSize": 20,
-                    "lineHeight": 20,
-                    "marginLeft": 10,
-                    "marginRight": 50,
-                    "marginVertical": 8,
-                    "opacity": 1,
-                    "paddingTop": 2,
-                    "textAlign": "justify",
-                    "textDecorationLine": undefined,
-                  }
-                }
-              >
-                Design UI prototype
-              </Text>
-            </View>
           </View>
         </View>
       </RCTSafeAreaView>
     </View>
   </RCTScrollView>,
   <View
-    collapsable={false}
-    nativeID="animatedComponent"
     pointerEvents="auto"
     style={
       Object {
@@ -651,8 +374,6 @@ Array [
           }
         >
           <View
-            collapsable={false}
-            nativeID="animatedComponent"
             style={
               Object {
                 "bottom": 0,
