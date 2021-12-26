@@ -1,7 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
+import Tasks from './Tasks'
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    Tasks,
+  },
 })
 
 export type AppDispatch = typeof store.dispatch
