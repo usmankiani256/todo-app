@@ -9,9 +9,9 @@ const useService = (props: StackScreenProps) => {
     setTimeout(() => {
       getCurrentUser().then(user => {
         if (user) {
-          props.navigation.navigate('Home')
+          props.navigation.replace('Home')
         } else {
-          props.navigation.navigate('Welcome')
+          props.navigation.replace('Welcome')
         }
       })
       SplashScreen.hide()
