@@ -4,12 +4,16 @@ import useStyles from './styles'
 import { Input } from 'Components/Molecules'
 import DropDownPicker from 'react-native-dropdown-picker'
 import { Text } from 'Components/Atoms'
+import { createTask, updateTask } from 'Api'
+import { useDispatch } from 'react-redux'
+import { getTasks } from 'Store/Redux/Tasks'
 
 export type Priority = 'high' | 'medium' | 'low' | null
 
 export type DialogProps = {
   hideDialog: () => void
   edit?: boolean
+  id?: number
   description?: string
   priority?: Priority
 }
@@ -17,8 +21,12 @@ export type DialogProps = {
 const CreateTaskDialog = (props: DialogProps) => {
   const { hideDialog, edit } = props
 
-  const [description, setDescription] = React.useState<string | undefined>('')
+  const dispatch = useDispatch()
 
+  const [description, setDescription] = React.useState<any>('')
+
+  const [loading, setLoading] = React.useState(false)
+  const [disabled, setDisabled] = React.useState(false)
   const [open, setOpen] = React.useState(false)
   const [value, setValue] = React.useState<any>(null)
   const [items, setItems] = React.useState([
@@ -28,17 +36,49 @@ const CreateTaskDialog = (props: DialogProps) => {
   ])
 
   React.useEffect(() => {
-    console.log('Checking values')
-    if (edit && props?.description && props?.priority) {
-      console.log('Updating values')
-      // Update TextInput value
-      // Update Priority
-      setTimeout(() => {
-        setDescription(props?.description)
-        setValue(props?.priority)
-      }, 1)
+    setTimeout(() => {
+      setDescription(props?.description || '')
+      setValue(props?.priority || '')
+    }, 1)
+  }, [props])
+
+  React.useEffect(() => {
+    if (description.length > 0 && value?.length > 0) {
+      setDisabled(false)
+    } else {
+      setDisabled(true)
     }
-  }, [edit, props])
+  }, [description, value])
+
+  function onUpdateTask() {
+    if (props.id) {
+      setLoading(true)
+      updateTask(props?.id, { description: description, priority: value }).then(
+        () => {
+          setTimeout(() => {
+            dispatch(getTasks())
+            setLoading(false)
+            hideDialog()
+          }, 1000)
+        },
+      )
+    }
+  }
+
+  function onCreateTask() {
+    setLoading(true)
+    createTask({
+      description: description,
+      priority: value,
+      status: 'unchecked',
+    }).then(() => {
+      setTimeout(() => {
+        dispatch(getTasks())
+        setLoading(false)
+        hideDialog()
+      }, 1000)
+    })
+  }
 
   const { input, dropdown, ddContainer, button } = useStyles()
 
@@ -71,8 +111,19 @@ const CreateTaskDialog = (props: DialogProps) => {
             containerStyle={ddContainer}
           />
         </Dialog.Content>
-        <Button mode="contained" style={button} onPress={() => {}}>
-          {edit ? 'Update Task' : 'Create Task'}
+        <Button
+          loading={loading}
+          disabled={loading || disabled}
+          mode="contained"
+          style={button}
+          onPress={edit ? onUpdateTask : onCreateTask}>
+          {loading && edit
+            ? 'Updating'
+            : loading
+            ? 'Creating'
+            : edit
+            ? 'Update Task'
+            : 'Create Task'}
         </Button>
       </Dialog>
     </Portal>
