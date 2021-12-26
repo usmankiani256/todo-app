@@ -1,7 +1,7 @@
 
 # Welcome todo app!
 
-![](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/banner.png)
+![](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/banner.png =250x)
 
 This project is a simple todo application developed using React Native that manages all tasks using local storage and redux.
 
@@ -67,7 +67,7 @@ yarn install:pods && yarn ios
 
 ![Create Task](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/6.%20Create%20Task.png)
 
-![Update Task](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/6.%20Update%20Task.png)
+![Update Task](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/7.%20Update%20Task.png)
 
 
 
