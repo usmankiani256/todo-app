@@ -1,5 +1,4 @@
 import * as React from 'react'
-import {} from 'react-native'
 import { StackScreenProps } from '@Navigation/Stack/types'
 import { loginUser } from '@Api'
 import { setCurrentUser } from 'Api'

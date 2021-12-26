@@ -1,4 +1,3 @@
-import {} from 'react-native'
 import { StackScreenProps } from '@Navigation/Stack/types'
 import React from 'react'
 import { updateTask } from '@Api'
