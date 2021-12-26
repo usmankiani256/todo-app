@@ -27,9 +27,9 @@ const useService = (props: StackScreenProps) => {
     loginUser({ email, password })
       .then(verified => {
         if (verified) {
-          console.debug('Navigate to Home')
           setError(false)
           setCurrentUser({ email, password }).then(() => {
+            console.debug('Navigate to Home')
             props.navigation.navigate('Home')
           })
         } else {

@@ -148,13 +148,13 @@ exports[`SignInScreen Component renders correctly 1`] = `
                     Object {
                       "bottom": 0,
                       "left": 0,
-                      "opacity": 1,
+                      "opacity": 0,
                       "position": "absolute",
                       "right": 0,
                       "top": 0,
                       "transform": Array [
                         Object {
-                          "translateX": 0,
+                          "translateX": 3,
                         },
                       ],
                     }
@@ -183,10 +183,10 @@ exports[`SignInScreen Component renders correctly 1`] = `
                             "translateX": 0,
                           },
                           Object {
-                            "translateY": 0,
+                            "translateY": -10,
                           },
                           Object {
-                            "scale": 1,
+                            "scale": 0.75,
                           },
                         ],
                         "writingDirection": "ltr",
@@ -217,10 +217,10 @@ exports[`SignInScreen Component renders correctly 1`] = `
                             "translateX": 0,
                           },
                           Object {
-                            "translateY": 0,
+                            "translateY": -10,
                           },
                           Object {
-                            "scale": 1,
+                            "scale": 0.75,
                           },
                         ],
                         "writingDirection": "ltr",
@@ -273,9 +273,9 @@ exports[`SignInScreen Component renders correctly 1`] = `
                       ],
                     ]
                   }
-                  testID="input-id"
+                  testID="input-email-signin"
                   underlineColorAndroid="transparent"
-                  value=""
+                  value="guest@example.com"
                 />
               </View>
             </View>
@@ -343,13 +343,13 @@ exports[`SignInScreen Component renders correctly 1`] = `
                     Object {
                       "bottom": 0,
                       "left": 0,
-                      "opacity": 1,
+                      "opacity": 0,
                       "position": "absolute",
                       "right": 0,
                       "top": 0,
                       "transform": Array [
                         Object {
-                          "translateX": 0,
+                          "translateX": 3,
                         },
                       ],
                     }
@@ -378,10 +378,10 @@ exports[`SignInScreen Component renders correctly 1`] = `
                             "translateX": 0,
                           },
                           Object {
-                            "translateY": 0,
+                            "translateY": -10,
                           },
                           Object {
-                            "scale": 1,
+                            "scale": 0.75,
                           },
                         ],
                         "writingDirection": "ltr",
@@ -412,10 +412,10 @@ exports[`SignInScreen Component renders correctly 1`] = `
                             "translateX": 0,
                           },
                           Object {
-                            "translateY": 0,
+                            "translateY": -10,
                           },
                           Object {
-                            "scale": 1,
+                            "scale": 0.75,
                           },
                         ],
                         "writingDirection": "ltr",
@@ -469,9 +469,9 @@ exports[`SignInScreen Component renders correctly 1`] = `
                       },
                     ]
                   }
-                  testID="input-id"
+                  testID="input-password-signin"
                   underlineColorAndroid="transparent"
-                  value=""
+                  value="guest"
                 />
               </View>
               <View

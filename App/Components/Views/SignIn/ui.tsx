@@ -56,6 +56,7 @@ const SignIn = (props: StackScreenProps) => {
 
           <View style={inputContainer}>
             <Input
+              testID="input-email-signin"
               label="Email Address"
               keyboardType="email-address"
               value={email}
@@ -63,6 +64,7 @@ const SignIn = (props: StackScreenProps) => {
               placeholder="Johndoe@gmail.com"
             />
             <Input
+              testID="input-password-signin"
               label="Password"
               secureTextEntry={secureEntry}
               value={password}
