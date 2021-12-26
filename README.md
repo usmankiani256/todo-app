@@ -13,6 +13,11 @@ This project is a simple todo application developed using React Native that mana
  - Edit tasks
  - Search tasks
  - Prioritise tasks
+
+
+## Demo
+
+ - [Android App (.apk)](https://appsenjoy.com/DjRus)
  
 ## Requirements
  
