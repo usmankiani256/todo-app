@@ -12,8 +12,15 @@ export type PaperInputProps = React.ComponentProps<typeof TextInput> & {
 }
 
 const Input = (props: PaperInputProps) => {
-  const { style, rightIcon, errorMessage, onRightPress, errorStyle, ...rest } =
-    props
+  const {
+    style,
+    rightIcon,
+    errorMessage,
+    onRightPress,
+    errorStyle,
+    testID,
+    ...rest
+  } = props
 
   const { viewStyle } = useStyles()
 
@@ -23,7 +30,7 @@ const Input = (props: PaperInputProps) => {
     <>
       <TextInput
         {...rest}
-        testID="input-id"
+        testID={testID || 'input-id'}
         dense={true}
         style={[viewStyle, style]}
         outlineColor={Colors.foreground}
