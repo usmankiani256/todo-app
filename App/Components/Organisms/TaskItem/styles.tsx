@@ -24,7 +24,6 @@ const useStyles = () =>
       width: 8,
       borderTopLeftRadius: 10,
       borderBottomLeftRadius: 10,
-      marginRight: 10,
     },
     text: {
       paddingTop: 2,

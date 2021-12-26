@@ -8,6 +8,7 @@ import { Text } from 'Components/Atoms'
 import { TaskDialog } from '@Molecules'
 
 export type TaskItemProps = {
+  id?: number | undefined
   priority: 'high' | 'medium' | 'low'
   status: 'checked' | 'unchecked'
   description: string
@@ -15,7 +16,7 @@ export type TaskItemProps = {
 }
 
 const TaskItem = (props: TaskItemProps) => {
-  const { priority, status, description, onToggle } = props
+  const { id, priority, status, description, onToggle } = props
 
   const [visible, setVisible] = React.useState(false)
 
@@ -37,6 +38,7 @@ const TaskItem = (props: TaskItemProps) => {
   return (
     <>
       <TouchableRipple
+        key={id}
         testID="task-item-button"
         onPress={showDialog}
         style={container}>
@@ -54,7 +56,10 @@ const TaskItem = (props: TaskItemProps) => {
             name={taskStatus ? 'checkbox-marked' : 'checkbox-blank-outline'}
             color={taskStatus ? Colors.primary : Colors.tintGrey}
             size={25}
-            style={{ opacity: taskStatus ? 0.7 : 1 }}
+            style={{
+              opacity: taskStatus ? 0.7 : 1,
+              padding: 10,
+            }}
           />
           <Text
             justify
