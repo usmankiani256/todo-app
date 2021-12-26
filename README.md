@@ -1,7 +1,8 @@
 
 # Welcome todo app!
-
-![](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/banner.png =250x)
+<center>
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/banner.png" width="500" height="200" />
+</center>
 
 This project is a simple todo application developed using React Native that manages all tasks using local storage and redux.
 
@@ -55,20 +56,17 @@ yarn install:pods && yarn ios
 
 ## Screenshots
 
-![Splash Screen](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/1.%20Splash.png)
 
-![Welcome Screen](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/2.%20Welcome.png)
+<div style="content:""; clear: both; display: table;">
 
-![Sign In Screen](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/3.%20Sign%20In.png)
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/1.%20Splash.png" width="300" height="500" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/2.%20Welcome.png" width="300" height="500" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/3.%20Sign%20In.png" width="300" height="500" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/4.%20Sign%Up.png" width="300" height="500" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/5.%20Home.png" width="300" height="500" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/6.%20Create%20Task.png" width="300" height="500" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/7.%20Update%20Task.png" width="300" height="500" />
 
-![Sign Up Screen](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/4.%20Sign%20Up.png)
-
-![Home Screen](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/5.%20Home.png)
-
-![Create Task](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/6.%20Create%20Task.png)
-
-![Update Task](https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/7.%20Update%20Task.png)
-
-
+</div>
 
 
