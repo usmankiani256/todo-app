@@ -11,7 +11,7 @@ import { TaskItem, CreateTask } from '@Organisms'
 import { Task } from 'Api/Tasks'
 
 const Home = (props: StackScreenProps) => {
-  const { tasks, loading, onToggleStatus } = useService(props)
+  const { data, loading, query, setQuery, onToggleStatus } = useService(props)
 
   const { container, heading, caption } = useStyles()
 
@@ -36,17 +36,18 @@ const Home = (props: StackScreenProps) => {
             Hello User!
           </Text>
           <Text w5 p style={caption}>
-            You have X tasks
+            You have {data ? data?.length : 'X'} tasks
           </Text>
           <Search
-            // value={password}
-            // onChangeText={setPassword}
+            value={query}
+            onChangeText={setQuery}
+            onRightPress={() => setQuery('')}
             placeholder="Search Tasks"
           />
           <Text w2 h4 style={heading}>
             Tasks:
           </Text>
-          {loading ? <ActivityIndicator /> : tasks && tasks.map(renderTask)}
+          {loading ? <ActivityIndicator /> : data && data.map(renderTask)}
         </View>
       </Screen>
       <CreateTask />

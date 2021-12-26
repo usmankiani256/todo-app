@@ -10,6 +10,8 @@ const useService = (props: StackScreenProps) => {
   const dispatch = useDispatch()
 
   const [loading, setLoading] = React.useState(false)
+  const [query, setQuery] = React.useState('')
+  const [data, setData] = React.useState<any>(null)
 
   const Tasks = useSelector((state: RootState) => state.Tasks)
   const tasks = !Tasks.loading && Tasks.success && Tasks.data
@@ -17,6 +19,20 @@ const useService = (props: StackScreenProps) => {
   React.useEffect(() => {
     dispatch(getTasks())
   }, [dispatch])
+
+  React.useEffect(() => {
+    if (query.length > 0 && tasks) {
+      const filtered = tasks.filter(t =>
+        t.description.toLowerCase().includes(query.toLowerCase()),
+      )
+
+      setData(filtered)
+      setQuery(query)
+    } else {
+      setQuery(query)
+      setData(tasks)
+    }
+  }, [query, tasks])
 
   function onToggleStatus(id: number | any) {
     if (tasks) {
@@ -34,7 +50,7 @@ const useService = (props: StackScreenProps) => {
     }
   }
 
-  return { tasks, loading, onToggleStatus }
+  return { data, loading, query, setQuery, onToggleStatus }
 }
 
 export default useService
