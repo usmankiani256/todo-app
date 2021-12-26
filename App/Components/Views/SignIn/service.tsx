@@ -24,25 +24,19 @@ const useService = (props: StackScreenProps) => {
   }
 
   function onContinue() {
-    loginUser({ email, password })
-      .then(verified => {
-        if (verified) {
-          setError(false)
-          setCurrentUser({ email, password }).then(() => {
-            console.debug('Navigate to Home')
-            props.navigation.navigate('Home')
-          })
-        } else {
-          // Failed to login
-          console.debug('Failed')
-          setError(true)
-        }
-      })
-      .catch(() => {
+    loginUser({ email, password }).then(verified => {
+      if (verified) {
+        setError(false)
+        setCurrentUser({ email, password }).then(() => {
+          console.debug('Navigate to Home')
+          props.navigation.navigate('Home')
+        })
+      } else {
         // Failed to login
         console.debug('Failed')
         setError(true)
-      })
+      }
+    })
   }
 
   function onSignUp() {

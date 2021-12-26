@@ -61,4 +61,28 @@ describe('SignInScreen Component', () => {
 
     expect(props.navigation.navigate).toBeCalledWith('Home')
   })
+
+  it('fails to navigate to Home screen', async () => {
+    const props: any = {
+      navigation: {
+        navigate: jest.fn(),
+      },
+      route: {
+        params: {
+          email: null,
+        },
+      },
+    }
+
+    const { getByTestId } = render(<SignInScreen {...props} />)
+
+    fireEvent.changeText(getByTestId('input-email-signin'), 'guest@test.com')
+    fireEvent.changeText(getByTestId('input-password-signin'), 'guest')
+
+    fireEvent.press(getByTestId('signin-button-continue'))
+
+    await new Promise(r => setTimeout(r, 2000))
+
+    expect(props.navigation.navigate).toBeCalledTimes(0)
+  })
 })
