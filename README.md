@@ -59,13 +59,13 @@ yarn install:pods && yarn ios
 
 <div style="content:""; clear: both; display: table;">
 
-<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/1.%20Splash.png" width="300" height="500" />
-<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/2.%20Welcome.png" width="300" height="500" />
-<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/3.%20Sign%20In.png" width="300" height="500" />
-<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/4.%20Sign%Up.png" width="300" height="500" />
-<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/5.%20Home.png" width="300" height="500" />
-<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/6.%20Create%20Task.png" width="300" height="500" />
-<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/7.%20Update%20Task.png" width="300" height="500" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/1.%20Splash.png" width="333" height="700" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/2.%20Welcome.png" width="333" height="700" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/3.%20Sign%20In.png" width="333" height="700" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/4.%20Sign%Up.png" width="333" height="700" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/5.%20Home.png" width="333" height="700" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/6.%20Create%20Task.png" width="333" height="700" />
+<img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/7.%20Update%20Task.png" width="333" height="700" />
 
 </div>
 
