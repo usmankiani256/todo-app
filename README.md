@@ -57,7 +57,7 @@ yarn install:pods && yarn ios
 ## Screenshots
 
 
-<div style="content:""; clear: both; display: table; align-items: center">
+<div style="content:""; clear: both; display: table;justify-content: center">
 
 <img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/1.%20Splash.png" width="250" height="445" />
 <img src="https://github.com/usmankiani256/todo-app/blob/main/App/Assets/screenshots/2.%20Welcome.png" width="250" height="445" />
