@@ -11,7 +11,7 @@ describe('SignUpScreen Component', () => {
     expect(rendered).toMatchSnapshot()
   })
 
-  it('navigates to SignIn screen', () => {
+  it('navigates to Sign In screen', async () => {
     const props: any = {
       navigation: {
         navigate: jest.fn(),
@@ -20,8 +20,16 @@ describe('SignUpScreen Component', () => {
 
     const { getByTestId } = render(<SignUpScreen {...props} />)
 
-    fireEvent.press(getByTestId('sign-up-button-signin'))
+    fireEvent.changeText(getByTestId('sign-up-input-name'), 'test user')
+    fireEvent.changeText(getByTestId('sign-up-input-email'), 'test@user.com')
+    fireEvent.changeText(getByTestId('sign-up-input-password'), 'test')
 
-    expect(props.navigation.navigate).toBeCalledWith('SignIn')
+    fireEvent.press(getByTestId('sign-up-button-create'))
+
+    await new Promise(r => setTimeout(r, 2000))
+
+    expect(props.navigation.navigate).toBeCalledWith('SignIn', {
+      email: 'test@user.com',
+    })
   })
 })

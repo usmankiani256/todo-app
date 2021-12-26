@@ -368,7 +368,7 @@ exports[`SignUpScreen Component renders correctly 1`] = `
                       ],
                     ]
                   }
-                  testID="input-id"
+                  testID="sign-up-input-name"
                   underlineColorAndroid="transparent"
                   value=""
                 />
@@ -563,7 +563,7 @@ exports[`SignUpScreen Component renders correctly 1`] = `
                       ],
                     ]
                   }
-                  testID="input-id"
+                  testID="sign-up-input-email"
                   underlineColorAndroid="transparent"
                   value=""
                 />
@@ -759,7 +759,7 @@ exports[`SignUpScreen Component renders correctly 1`] = `
                       },
                     ]
                   }
-                  testID="input-id"
+                  testID="sign-up-input-password"
                   underlineColorAndroid="transparent"
                   value=""
                 />

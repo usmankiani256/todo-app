@@ -68,12 +68,14 @@ const SignUp = (props: StackScreenProps) => {
 
           <View style={inputContainer}>
             <Input
+              testID="sign-up-input-name"
               label="Full Name"
               value={username}
               onChangeText={setUsername}
               placeholder="John Doe"
             />
             <Input
+              testID="sign-up-input-email"
               label="Email Address"
               keyboardType="email-address"
               value={email}
@@ -81,6 +83,7 @@ const SignUp = (props: StackScreenProps) => {
               placeholder="Johndoe@gmail.com"
             />
             <Input
+              testID="sign-up-input-password"
               label="Password"
               secureTextEntry={secureEntry}
               value={password}
