@@ -1,11 +1,11 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
 
 export type RootStackParamList = {
-  Splash: undefined
-  Welcome: undefined
-  SignIn: undefined
-  SignUp: undefined
-  Home: undefined
+  Splash: any
+  Welcome: any
+  SignIn: any
+  SignUp: any
+  Home: any
 }
 
 export type StackScreenProps = NativeStackScreenProps<RootStackParamList>
