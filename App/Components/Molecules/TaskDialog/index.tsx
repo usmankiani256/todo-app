@@ -113,7 +113,7 @@ const CreateTaskDialog = (props: DialogProps) => {
         </Dialog.Content>
         <Button
           loading={loading}
-          disabled={loading || disabled}
+          disabled={open || loading || disabled}
           mode="contained"
           style={button}
           onPress={edit ? onUpdateTask : onCreateTask}>
