@@ -44,7 +44,6 @@ exports[`TaskItem Component renders high priority, checked and description 1`] =
         "borderTopLeftRadius": 10,
         "borderWidth": 1,
         "height": "100%",
-        "marginRight": 10,
         "width": 8,
       }
     }
@@ -60,6 +59,7 @@ exports[`TaskItem Component renders high priority, checked and description 1`] =
         },
         Object {
           "opacity": 0.7,
+          "padding": 10,
         },
         Object {
           "fontFamily": "Material Design Icons",
@@ -139,7 +139,6 @@ exports[`TaskItem Component renders low priority 1`] = `
         "borderTopLeftRadius": 10,
         "borderWidth": 1,
         "height": "100%",
-        "marginRight": 10,
         "width": 8,
       }
     }
@@ -155,6 +154,7 @@ exports[`TaskItem Component renders low priority 1`] = `
         },
         Object {
           "opacity": 1,
+          "padding": 10,
         },
         Object {
           "fontFamily": "Material Design Icons",
@@ -234,7 +234,6 @@ exports[`TaskItem Component renders medium priority, unchecked 1`] = `
         "borderTopLeftRadius": 10,
         "borderWidth": 1,
         "height": "100%",
-        "marginRight": 10,
         "width": 8,
       }
     }
@@ -250,6 +249,7 @@ exports[`TaskItem Component renders medium priority, unchecked 1`] = `
         },
         Object {
           "opacity": 1,
+          "padding": 10,
         },
         Object {
           "fontFamily": "Material Design Icons",
